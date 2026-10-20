@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <!--
+    Segurança: só scripts do próprio app (nada de JavaScript inline). O app só se conecta por HTTPS à sua API.
+    Se a API ficar em outro lugar que não https, o Android bloqueia de qualquer forma.
+  -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: blob:; style-src 'self' 'unsafe-inline'; script-src 'self'; img-src 'self' data: blob:; connect-src 'self' https: http://localhost:* http://127.0.0.1:*; media-src 'none'; object-src 'none'">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#26497d">
+  <link rel="stylesheet" href="css/app.css">
+  <title>Costura</title>
+</head>
+<body>
+  <div id="app" aria-live="polite"></div>
+  <div id="avisos" aria-live="assertive"></div>
+
+  <script src="cordova.js"></script>
+  <script src="js/vendor/chart.umd.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/calculo.js"></script>
+  <script src="js/previsao.js"></script>
+  <script src="js/arquivo.js"></script>
+  <script src="js/armazem.js"></script>
+  <script src="js/nuvem.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/comum.js"></script>
+  <script src="js/telas-cortes.js"></script>
+  <script src="js/telas-painel.js"></script>
+  <script src="js/telas-financeiro.js"></script>
+  <script src="js/telas-ajustes.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
