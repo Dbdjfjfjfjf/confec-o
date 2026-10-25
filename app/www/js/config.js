@@ -5,7 +5,7 @@
 
   C.config = {
     // Endereço da API Node que fala com a Aiven. Também dá para mudar depois em Ajustes > Servidor.
-    API_URL: 'https://SEU-APP.onrender.com',
+    API_URL: ' https://costura-ltit.onrender.com',
     APP_VERSAO: '1.0.0',
     TERMOS_VERSAO: '1.0',
     PASTA: 'Costura',

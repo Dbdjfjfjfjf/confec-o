@@ -251,7 +251,7 @@
     var inModelo = ui.entrada({ valor: base.modelo || '', placeholder: 'Ex.: shortinho, bermuda', max: 60 });
     var inData = ui.entrada({ tipo: 'date', valor: base.data_recebimento });
     var inPrazo = ui.entrada({ tipo: 'date', valor: base.prazo || '' });
-    var inGrupo = ui.entrada({ valor: base.grupo || '', placeholder: 'Ex.: Grupo do WhatsApp B', max: 60 });
+    var inGrupo = ui.entrada({ valor: base.grupo || '', placeholder: 'Ex.: Pule esta parte', max: 60 });
     var inPessoas = ui.entradaInteiro(base.pessoas || 1, null, '1');
     var inObs = h('textarea', { rows: '2', maxlength: '500', placeholder: 'Anotações sobre o corte' });
     inObs.value = base.observacao || '';

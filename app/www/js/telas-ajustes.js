@@ -1,4 +1,4 @@
-/* Ajustes: oficina, preços, tecidos, Pix, sincronização, recuperação, arquivo no aparelho e privacidade. */
+/* Ajustes: Confecção, preços, tecidos, Pix, sincronização, recuperação, arquivo no aparelho e privacidade. */
 (function (g) {
   'use strict';
   var C = (g.Costura = g.Costura || {});
@@ -20,9 +20,9 @@
     var pagina = h('div', { class: 'pagina' });
     pagina.appendChild(h('div', { class: 'titulo-secao' }, h('h2', null, 'Ajustes')));
 
-    /* --- oficina --- */
+    /* --- confecção --- */
     var inOficina = ui.entrada({ valor: X.oficina(), max: 120, capitalizar: 'words' });
-    var cOficina = ui.campo('Nome da oficina', inOficina);
+    var cOficina = ui.campo('Nome da confecção', inOficina);
     var c1 = cartao('Oficina');
     c1.appendChild(h('div', { class: 'form' }, cOficina, h('button', { class: 'btn primario pequeno', type: 'button', onclick: function () {
       var v = inOficina.value.trim();

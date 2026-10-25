@@ -111,8 +111,8 @@
   function boasVindas() {
     rodando = false;
     var r = raiz();
-    var inNome = ui.entrada({ placeholder: 'Ex.: Oficina da Maria', max: 120, capitalizar: 'words' });
-    var cNome = ui.campo('Nome da sua oficina', inNome);
+    var inNome = ui.entrada({ placeholder: 'Ex.: RS produções', max: 120, capitalizar: 'words' });
+    var cNome = ui.campo('Nome da confecção', inNome);
     var aceite = h('input', { type: 'checkbox', id: 'aceite', style: { width: '24px', height: '24px', accentColor: 'var(--primaria)', flex: 'none', marginTop: '2px' } });
     var erro = h('div', { class: 'erro', role: 'alert' });
     var botao = h('button', { class: 'btn acento bloco', type: 'button' }, 'Aceitar e começar');
